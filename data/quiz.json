@@ -43,7 +43,7 @@
     ],
     "string": [
         {
-            "question": "Give the name of the month Queen Elizabeth II died :",
+            "question": "Give the month's name Queen Elizabeth II died :",
             "response": "september",
             "errorMessage": "This person need to watch news and actualities"
         },

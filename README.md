@@ -30,4 +30,9 @@ node quizzy -h
 node quizzy help
 ```
 
+## Features
+- Add a command that create new quiz
+- Add a command that delete quiz
+- Add a delay
+
 ## Enjoy B)
