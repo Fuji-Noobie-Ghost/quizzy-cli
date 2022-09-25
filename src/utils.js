@@ -24,4 +24,37 @@ function displayTitle(title) {
     })
 }
 
-export { loadQuiz, randomGenerator, displayTitle }
+function displayQR(qr) {
+    qr.forEach(value => {
+        console.log(color.set('Question: ', 'green'), value.question)
+        console.log(color.set('Response: ', 'green'), value.response, '\n')
+    })
+}
+
+function displayQMC(qmc) {
+    qmc.forEach(value => {
+        console.log(color.set('Question: ', 'green'), value.question)
+        let responses = value.responses[0]
+        for (let i = 1; i < value.responses; i++)
+            responses += ', ' + value.responses[i]
+        console.log(color.set('Responses: ', 'green'), responses, '\n')
+    })
+}
+
+function displayList(data) {
+    console.clear()
+    console.log('\n')
+    displayTitle('Quizzy List')
+    setTimeout(() => {
+        console.log(center(color.set('Unique Choice', 'cyan+bold'), process.stdout.columns), '\n')
+        displayQR(data.QUC)
+        console.log(center(color.set('Multiple Choice', 'cyan+bold'), process.stdout.columns), '\n')
+        displayQMC(data.QMC)
+        console.log(center(color.set('Number Input', 'cyan+bold'), process.stdout.columns), '\n')
+        displayQR(data.number)
+        console.log(center(color.set('Word Input', 'cyan+bold'), process.stdout.columns), '\n')
+        displayQR(data.string)
+    }, 1000)
+}
+
+export { loadQuiz, randomGenerator, displayTitle, displayList }
