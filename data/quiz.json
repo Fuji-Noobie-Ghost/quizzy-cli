@@ -1,0 +1,56 @@
+{
+    "QUC": [
+        {
+            "type": "list",
+            "question": "Which color is the Napoleon's white hourse XD ?",
+            "response": "white",
+            "suggestions": ["green", "red", "white", "black"],
+            "errorMessage": "Are you kidding me?"
+        },
+        {
+            "type": "rawlist",
+            "question": "Which is the richest country in the world ?",
+            "response": "USA",
+            "suggestions": ["China", "USA", "Japan", "Germany"],
+            "errorMessage": "This person need to watch news"
+        }
+    ],
+    "QMC": [
+        {
+            "question": "Most popular Malagasy developer's Group (max: two)",
+            "responses": ["E-Blague", "FaceDev"],
+            "suggestions": ["FaceDev", "Developpeurs Web Malagasy", "E-Recrute", "E-Blague"],
+            "errorMessage": "Not a Malagasy developer?"
+        },
+        {
+            "question": "Which are in the list of 7 Wonders of the Modern World ?",
+            "responses": ["Great Wall of China", "Taj Mahal"],
+            "suggestions": ["Statue of Zeus", "Great Wall of China", "Pyramid of Cheops", "Taj Mahal"],
+            "errorMessage": "Need to learn some things"
+        }
+    ],
+    "number": [
+        {
+            "question": "Give the day Queen Elizabeth II died :",
+            "response": 8,
+            "errorMessage": "This person need to watch news and actualities"
+        },
+        {
+            "question": "At what age Queen Elizabeth II died?",
+            "response": 96,
+            "errorMessage": "Need to learn some things"
+        }
+    ],
+    "string": [
+        {
+            "question": "Give the name of the month Queen Elizabeth II died :",
+            "response": "september",
+            "errorMessage": "This person need to watch news and actualities"
+        },
+        {
+            "question": "Who is the main character in God Of War ?",
+            "response": "kratos",
+            "errorMessage": "Not a Gamer ?"
+        }
+    ]
+}
